@@ -1,0 +1,178 @@
+  484  eval `ssh-agent -s`
+  485  ssh-add -l
+  486  git init
+  487  git add remote git@github.com:TheREYua/VersionControlWithGit.git
+  488  git remote add origin git@github.com:TheREYua/VersionControlWithGit.git
+  489  ll
+  490  touch song.txt
+  491  vim
+  492  nano -v
+  493  vim song.txt 
+  494  cat song.txt 
+  495  git add song.txt .
+  496  git commit -m 'add first half of my favorite song'
+  497  git push origin master
+  498  eval `ssh-agent -s`
+  499  ssh-add ~/.ssh/id_rsa_git_rey
+  500  git push origin master
+  501  git pull origin
+  502  cat song.txt 
+  503  git pull origin master
+  504  cat song.txt 
+  505  vim .gitignore
+  506  mkdir bin/
+  507  mkdir d1/bim/
+  508  mkdir d1/
+  509  mkdir d1/bin
+  510  git status
+  511  touch bin/test
+  512  git status
+  513  touch d1/bin/test
+  514  git status
+  515  touch d1/test
+  516  git status
+  517  git add .
+  518  git config core.autocrlf true
+  519  git commit -m 'test gitignore'
+  520  git push origin master
+  521  vim .gitignore 
+  522  git add .
+  523  git commit -m 'test gitignore'
+  524  git push origin master
+  525  vim v1/bin/test
+  526  vim d1/bin/test
+  527  git status
+  528  vim .gitignore 
+  529  git status
+  530  vim .gitignore 
+  531  git status
+  532  vim bin/test 
+  533  git status
+  534  vim .gitignore 
+  535  git status
+  536  vim .gitignore 
+  537  git status
+  538  vim .gitignore 
+  539  git status
+  540  vim .gitignore 
+  541  git status
+  542  vim .gitignore 
+  543  git status
+  544  rm -r d1
+  545  ll
+  546  git status
+  547  git add .
+  548  git commit -m 'test gitignore'
+  549  git push origin master
+  550  git checkout -b feature
+  551  ll
+  552  mkdir lib
+  553  touch lib/test1
+  554  git add .
+  555  git commit -m 'first commit'
+  556  touch lib/test2
+  557  git commit -m 'second commit'
+  558  git add .
+  559  git commit -m 'second commit'
+  560  git push origin feature 
+  561  git origin -v
+  562  git remote -v
+  563  git checkout master
+  564  git merge feature 
+  565  git status
+  566  git checkout feature 
+  567  git status
+  568  vim arrows.txt
+  569  git add .
+  570  git commit -m 'add arows.txt'
+  571  git push origin feature 
+  572  git list
+  573  git log
+  574  git revert 6f1e5adc
+  575  git log
+  576  git revert -m 'undo' 6f1e5adc
+  577  git revert 6f1e5adc -m 'undo'
+  578  git status
+  579  ll
+  580  git commit -m 'undo'
+  581  git push origin feature 
+  582  vim arrows.txt
+  583  git add .
+  584  git status
+  585  git commit -m 'add arows.txt'
+  586  git status
+  587  git checkout master 
+  588  vim arrows.txt
+  589  git add .
+  590  git commit -m 'add arrows.txt'
+  591  git merge feature 
+  592  vim arrows.txt
+  593  git status
+  594  git add .
+  595  git commit -m 'add arrows.txt'
+  596  cat arrows.txt 
+  597  git push origin master 
+  598  git status
+  599  git push origin master 
+  600  git pull origin master
+  601  git status
+  602  git add .
+  603  git commit -m 'add arrows.txt'
+  604  git push origin master 
+  605  git status
+  606  git checkout feature 
+  607  git rebase --continue
+  608  git status
+  609  git push origin master 
+  610  git pull origin master
+  611  git status
+  612  git push origin master 
+  613  cat arrows.txt 
+  614  git checkout feature 
+  615  cat arrows.txt 
+  616  git checkout -b storm
+  617  vim storm.txt
+  618  git add .
+  619  git commit -m 'add storm.txt'
+  620  vim storm.txt
+  621  git checkout master 
+  622  git status
+  623  git add .
+  624  git commit -m 'add storm.txt'
+  625  git checkout master 
+  626  vim pursuit.txt
+  627  git add .
+  628  git commit -m 'add pursuit.txt'
+  629  git tag -a t1 - m 'my first tag'
+  630  git tag -a t1 -m 'my first tag'
+  631  git tag -l
+  632  git checkout storm 
+  633  git rebase master 
+  634  ll
+  635  git status
+  636  git push origin storm 
+  637  git push origin master
+  638  git push origin feature 
+  639  git push --all origin
+  640  git checkout master 
+  641  git remote add origin git@github.com:TheREYua/VersionControlWithGit2.git
+  642  git remote set-url origin git@github.com:TheREYua/VersionControlWithGit2.git
+  643  get remote -v
+  644  git remote -v
+  645  git remote rename origin origin2
+  646  git remote -v
+  647  git remote add origin git@github.com:TheREYua/VersionControlWithGit.git
+  648  git remote -v
+  649  git push --all origin2
+  650  vim somechanges.txt
+  651  git add .
+  652  git commit -m 'add some changes'
+  653  git push origin master
+  654  git pull origin
+  655  git pull origin master
+  656  git status
+  657  ll
+  658  git commit -m 'add some changes'
+  659  git push origin master
+  660  history
+  661  history > history.txt
